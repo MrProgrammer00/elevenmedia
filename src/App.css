@@ -132,7 +132,7 @@
   color: rgba(255, 255, 255, 0);
   font-size: 30px;
   font-weight: 700;
-  -webkit-text-stroke: 1px #e8e8e8;
+  color: white;
   letter-spacing: 2px;
 }
 .menutab-open {
