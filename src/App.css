@@ -1,38 +1,111 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 1px solid red;
+}
+
 .App {
   text-align: center;
+  background: linear-gradient(to bottom right, #ed4264, #ffedbc);
+  width: 100%;
+  height: 200vh;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/*THIS IS FOR THE NAVBAR*/
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav {
+  width: 100%;
+  height: 10vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  box-sizing: border-box;
+  justify-content: space-between;
+  padding: 0 20px;
+  
+  
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  font-size: 30px;
+  font-weight: 600;
+  color: #e8e8e8;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.menu {
+  width: 40px;
+  height: 30px;
+  
 }
+
+
+
+.burger {
+  position: relative;
+  width: 40px;
+  height: 30px;
+  background: transparent;
+  cursor: pointer;
+}
+
+.burger input {
+  display: none;
+}
+
+.burger span {
+  display: block;
+  position: absolute;
+  height: 4px;
+  width: 100%;
+  background: #e8e8e8;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+  transform: rotate(0deg);
+  transition: .25s ease-in-out;
+}
+
+.burger span:nth-of-type(1) {
+  top: 0px;
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(2) {
+  top: 50%;
+  transform: translateY(-50%);
+  transform-origin: left center;
+}
+
+.burger span:nth-of-type(3) {
+  top: 100%;
+  transform-origin: left center;
+  transform: translateY(-100%);
+}
+
+.burger input:checked ~ span:nth-of-type(1) {
+  transform: rotate(45deg);
+  top: 0px;
+  left: 5px;
+}
+
+.burger input:checked ~ span:nth-of-type(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.burger input:checked ~ span:nth-of-type(3) {
+  transform: rotate(-45deg);
+  top: 28px;
+  left: 5px;
+}
+
+
+/*THIS IS FOR THE MENU TAB*/
+
+.menutab {
+  position: fixed;
+  width: 100%;
+  height: 400px;
+  z-index: ;
+}
+
