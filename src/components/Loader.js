@@ -3,15 +3,8 @@ import "../App.css"
 
 function Loader() {
     return (
-        <div className="loader">
-            <div class="spinner">
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
+        <div className="loader-bg">
+            <div class="loader"></div>
         </div>
     );
 }
