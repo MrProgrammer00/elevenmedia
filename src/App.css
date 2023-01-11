@@ -282,7 +282,7 @@
 }
 
 .main-page1 {
-  width: 50%;
+  width: auto;
   height: 40vh;
   display: flex;
   justify-content: center;
