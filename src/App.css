@@ -4,11 +4,13 @@
   border: 1px solid red;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&family=Poppins:wght@100;300;400;600;700;800;900&display=swap');
+
 .App {
   text-align: center;
   background: linear-gradient(to bottom right, #ed4264, #ffedbc);
   width: 100%;
-  height: 100vh;
+  
   
 }
 
@@ -109,6 +111,7 @@
   margin: 0px 10%;
   border-radius: 20px;
   position: absolute;
+  
 }
 .menu-list ul {
   display: flex;
@@ -141,7 +144,8 @@
   height: 400px;
   z-index: 1;
   animation: menu-open 1s ease-in-out;
-  background: rgba(255, 255, 255, 0.3);
+
+  background-color: #f0808093;
 }
 
 @keyframes menu-open {
@@ -161,7 +165,7 @@
   height: 400px;
   z-index: -1;
   animation: menu-close 1s ease-in-out;
-  background: rgba(255, 255, 255, 0.3);
+  background-color: #f0808093;
 }
 
 @keyframes menu-close {
@@ -265,4 +269,32 @@
   50% {
     transform: scale(1.2, 1);
   }
+}
+
+/*THIS IS FOR THE MAIN PAGE*/
+
+.main {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-page1 {
+  width: 50%;
+  height: 40vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.main-page1 h1 {
+  color: #e8e8e8d5;
+  font-family: 'Poppins' sans-serif;
+  font-weight: 900;
+  font-size: 60px;
+  -webkit-text-stroke: 1px #ed4264;
 }
